@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bingo</title>
+</head>
+<body>
+    <div class="bingo-board">
+        <div class="jugador">
+            <p>JUGADOR</p>
+            <div id="jugador" class="card">
+                <div id="jugadorF1" class="row">
+
+                </div>
+                <div id="jugadorF2" class="row">
+
+                </div>
+                <div id="jugadorF3" class="row">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="circulo-gris">
+            <div class="numBingo">
+                <p></p>
+            </div>
+        </div>
+        <button onclick="jugar()">Jugar</button>
+
+        <div class="cpu">
+            <p>CPU</p>
+            <div id="cpu" class="card">
+                <div id="cpuF1" class="row">
+
+                </div>
+                <div id="cpuF2" class="row">
+
+                </div>
+                <div id="cpuF3" class="row">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="allNumeros">
+            <div class="rectangulo">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        alert("¡ Bienvenido al juego del BINGO. Suerte :) !")
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+    <script src="script.js"></script>
+</body>
+</html>

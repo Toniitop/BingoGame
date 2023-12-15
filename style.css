@@ -1,0 +1,115 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(84, 84, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.numBingo {
+    align-items: center;
+    text-align: center;
+}
+
+.bingo-board {
+    display: flex;
+    position: relative;
+}
+
+.jugador, .cpu {
+    width: 250px;
+    height: 230px;
+    background-color: rgb(170, 53, 53); /* Puedes cambiar el color como desees */
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.jugador {
+    top: -200px; /* Ajuste para mover hacia arriba */
+    left: -400px; /* Ajuste para mover hacia la izquierda */
+}
+
+.cpu {
+    top: -200px; /* Ajuste para mover hacia arriba */
+    right: -400px; /* Ajuste para mover hacia la derecha */
+}
+
+.circulo-gris {
+    width: 180px;
+    height: 180px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Para estar por encima de los cuadros rojos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    /* background-color: white; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+.allNumeros {
+    position: absolute;
+    bottom: -80px; /* Ajusta la posición vertical */
+    left: -140px; /* Ajusta la posición horizontal */
+    z-index: 0; /* Para colocarlo debajo de los otros elementos */
+}
+
+.rectangulo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 830px; /* Ancho del rectángulo */
+    height: 250px; /* Altura del rectángulo */
+    border: 1px solid white;
+    padding: 5px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    background-color: coral;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
